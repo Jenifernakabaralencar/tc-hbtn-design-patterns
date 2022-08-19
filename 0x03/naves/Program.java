@@ -10,7 +10,7 @@ public class Program {
         System.out.println(naveComArmaduraLaser);
 
         NaveEspacial naveComArmaduraNanoBots = new NanoBotsDecorator(new ArmaduraDecorator(new NaveEspacial(100, 100)));
-        System.out.println(naveComArmaduraNanoBots);
+        System.out.println(naveComArmaduraLaser);
 
         NaveEspacial naveComLaserNanoBots = new NanoBotsDecorator(new LaserDecorator(new NaveEspacial(75, 30)));
         System.out.println(naveComLaserNanoBots);
