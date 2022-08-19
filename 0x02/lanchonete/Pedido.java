@@ -27,12 +27,12 @@ public class Pedido {
         StringBuilder validador = new StringBuilder();
         validador.append("\tFora da Caixa:\n");
         for (ItemPedido itemPedido:itensForaCaixa) {
-            validador.append("\t\t-").append(itemPedido.getTipo()).append(" ").append(itemPedido.getNome()).append("\n");
+            validador.append("\t\t- ").append(itemPedido.getTipo()).append(" ").append(itemPedido.getNome()).append("\n");
 
         }
         validador.append("\tDentro da Caixa:\n");
         for (ItemPedido itemPedido: itensDentroCaixa) {
-            validador.append("\t\t-").append(itemPedido.getTipo()).append(" ").append(itemPedido.getNome()).append("\n");
+            validador.append("\t\t- ").append(itemPedido.getTipo()).append(" ").append(itemPedido.getNome()).append("\n");
         }
 
         return validador.toString();
